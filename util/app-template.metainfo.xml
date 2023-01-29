@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>my.app.id</id>
+  <!--Do not change this line. Not to be confused with the project license-->
+  <metadata_license>CC0-1.0</metadata_license>
+  <name>My App</name>
+  <summary>A one-liner about my app</summary>
+  <description><p>This is the description of my app.</p><p>It should be long, beautiful, and descriptive.</p></description>
+  <project_license>GPL-2.0</project_license>
+  <keywords>
+    <keyword>app</keyword>
+    <keyword>template</keyword>
+  </keywords>
+  <!--https://github.com/endlessm/gnome-software/blob/master/doc/kudos.md-->
+  <kudos>
+    <kudo>HiDpiIcon</kudo>
+  </kudos>
+  <!--This line should have the same name as the application id-->
+  <icon type="stock">my.app.id</icon>
+  <!--The actual URL of the icon, must be SVG-->
+  <icon type="remote">https://my.app/icon.svg</icon>
+  <categories>
+    <category>Development</category>
+    <category>System</category>
+    <category>Utility</category>
+  </categories>
+  <url type="homepage">https://my.app/</url>
+  <content_rating type="oars-1.1"/>
+  <provides>
+    <binary>myapp</binary>
+  </provides>
+  <!--The name of the desktop file apx exports-->
+  <launchable type="desktop-id">apx_managed-myapp.desktop</launchable>
+  <!--Change "container" to the container apx will use to install the package.
+  The tag's text is the binary name used to call `apx export` with.-->
+  <bundle type="package" container="apx_managed">myapp</bundle>
+  <releases>
+    <release timestamp="1675031101" version="1.2.3"/>
+  </releases>
+</component>
