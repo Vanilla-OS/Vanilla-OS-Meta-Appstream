@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>org.gnome.Calendar</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <name>Calendar</name>
+  <summary>Calendar for GNOME</summary>
+  <description><p>GNOME Calendar is a simple and beautiful calendar application designed to perfectly fit the GNOME desktop. By reusing the components which the GNOME desktop is built on, Calendar nicely integrates with the GNOME ecosystem.</p><p>We aim to find the perfect balance between nicely crafted features and user-centred usability. No excess, nothing missing. You’ll feel comfortable using Calendar, like you’ve been using it for ages!</p></description>
+  <project_license>GPL-2.0</project_license>
+  <keywords>
+    <keyword>Calendar</keyword>
+    <keyword>Event</keyword>
+    <keyword>Reminder</keyword>
+  </keywords>
+  <icon type="stock">org.gnome.Calendar</icon>
+  <icon type="remote">https://gitlab.gnome.org/GNOME/gnome-calendar/-/raw/main/data/icons/hicolor/scalable/apps/org.gnome.Calendar.svg</icon>
+  <categories>
+    <category>Calendar</category>
+    <category>Core</category>
+    <category>Office</category>
+  </categories>
+  <kudos>
+    <kudo>AppMenu</kudo>
+    <kudo>HiDpiIcon</kudo>
+    <kudo>ModernToolkit</kudo>
+    <kudo>SearchProvider</kudo>
+  </kudos>
+  <mimetypes>
+    <mimetype>text/calendar</mimetype>
+  </mimetypes>
+  <project_license>GPL-3.0-or-later</project_license>
+  <url type="bugtracker">https://gitlab.gnome.org/GNOME/gnome-calendar/issues</url>
+  <url type="homepage">https://wiki.gnome.org/Apps/Calendar</url>
+  <provides>
+    <binary>htop</binary>
+  </provides>
+  <launchable type="desktop-id">apx_managed-org.gnome.Calendar.desktop</launchable>
+  <bundle type="package" container="apx_managed">gnome-calendar</bundle>
+  <custom>
+    <value key="Vanilla::apx_container">apt</value>
+  </custom>
+</component>
