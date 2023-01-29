@@ -36,23 +36,26 @@ done
 # Generate Appstream
 echo $SEPARATOR
 echo "Generating Appstream...\n"
-appstreamcli compose packages --data-dir=output --hints-dir=output/hints --origin="vanilla_meta"
+appstreamcli compose --origin="vanilla_meta" packages --data-dir=output
 echo "Appstream generated at output/vanilla_meta.xml.gz"
 
 # Validate
 if [ "$1" != "--novalidate" ]; then
     echo $SEPARATOR
     echo "Validating Appstream...\n"
-    appstreamcli validate output/vanilla_meta.xml.gz
+    appstreamcli validate --no-net --explain --pedantic output/vanilla_meta.xml.gz
 fi
 
-# Replace fixed icons with remote, as gnome-software caches icons for us
+# Fix some problems with the generated output
 echo $SEPARATOR
-echo "Replacing local icons with remote name...\n"
+echo "Running fixups..."
 gzip -d output/vanilla_meta.xml.gz
+# Replace fixed icons with remote, as gnome-software caches icons for us
 echo $(get_app_ids) | tr ' ' '\n' | while read entry; do
     replace_icon_ids $entry
 done
+# Add origin name to components tag
+sed -r -i 's/(<components.*)>/\1 origin="vanilla_meta">/' output/vanilla_meta.xml
 gzip output/vanilla_meta.xml
 
 # Cleanup
