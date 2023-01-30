@@ -1,0 +1,19 @@
+Source: vanilla-os-meta-appstream
+Section: devel
+Priority: extra
+Maintainer: Mateus Melchiades <mateusbmelchiades@gmail.com>
+Uploaders: Mateus Melchiades <mateusbmelchiades@gmail.com>
+Build-Depends: appstream,
+               appstream-compose
+Standards-Version: 3.9.6
+Homepage: https://github.com/Vanilla-OS/Vanilla-OS-Meta-Appstream
+Vcs-Browser: https://github.com/Vanilla-OS/Vanilla-OS-Meta-Appstream
+Vcs-Git: git://github.com/Vanilla-OS/Vanilla-OS-Meta-Appstream.git
+
+Package: vanilla-os-meta-appstream
+Architecture: all
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         appstream,
+Built-Using: ${misc:Built-Using}
+Description: Appstream data for Vanilla OS Meta packages
