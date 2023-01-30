@@ -26,6 +26,14 @@ replace_icon_ids() {
     sed -r -z "s/([ \t]*<icon[^\n]*>$ESC_APPID[a-z\.]*<\/icon>\n){1,}/    $ESC_LINE\n/" -i output/vanilla_meta.xml
 }
 
+add_container_to_bundle() {
+    local APPID=$1
+    local LINE=$(cat packages/usr/share/metainfo/$APPID.metainfo.xml | grep "<bundle")
+    local ESC_LINE=$(escape_string "$LINE")
+    local BUNDLE_TEXT=$(echo -n $LINE | sed -r -n 's/.*>(.*)<\/bundle>/\1/p')
+    sed -r -i "s/<bundle.*>$BUNDLE_TEXT<\/bundle>/$ESC_LINE/" output/vanilla_meta.xml
+}
+
 
 # Download icons required by appstreamcli compose
 echo "Downloading remote icons...\n"
@@ -50,9 +58,11 @@ fi
 echo $SEPARATOR
 echo "Running fixups..."
 gzip -d output/vanilla_meta.xml.gz
-# Replace fixed icons with remote, as gnome-software caches icons for us
 echo $(get_app_ids) | tr ' ' '\n' | while read entry; do
+    # Replace fixed icons with remote, as gnome-software caches icons for us
     replace_icon_ids $entry
+    # Add container to bundle tag
+    add_container_to_bundle $entry
 done
 # Add origin name to components tag
 sed -r -i 's/(<components.*)>/\1 origin="vanilla_meta">/' output/vanilla_meta.xml
