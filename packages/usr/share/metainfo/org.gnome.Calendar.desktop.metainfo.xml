@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
-  <id>org.gnome.calendar</id>
+  <id>org.gnome.Calendar.desktop</id>
   <metadata_license>CC0-1.0</metadata_license>
   <name>Calendar</name>
   <summary>Calendar for GNOME</summary>

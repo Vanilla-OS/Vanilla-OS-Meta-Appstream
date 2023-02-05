@@ -15,6 +15,12 @@
     <kudo>AppMenu</kudo>
     <kudo>HiDpiIcon</kudo>
   </kudos>
+  <screenshots>
+    <screenshot type="default">
+      <image type="source">https://htop.dev/images/htop-2.0.png</image>
+      <image type="source">https://github.com/htop-dev/htop/blob/main/docs/images/screenshot.png</image>
+    </screenshot>
+  </screenshots>
   <icon type="stock">dev.htop.htop</icon>
   <icon type="remote">https://github.com/htop-dev/htop/raw/main/htop.svg</icon>
   <categories>
