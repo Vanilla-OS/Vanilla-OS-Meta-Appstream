@@ -1,4 +1,4 @@
-# Vanilla-OS-Meta-Appstream
+# Vanilla OS Meta Appstream
 
 This repository contains appstream metainfo files and tools for adding new packages to Vanilla OS Meta.
 
@@ -55,7 +55,7 @@ To run the builder script, you need the following packages:
 - *appstream*
 - *appstream-compose*
 
-**NOTE: ** At the time of writing, the most recent `appstreamcli` version in the default (apt)
+**NOTE:** At the time of writing, the most recent `appstreamcli` version in the default (apt)
 Apx container is *0.15.2*, which contains a bug that causes metainfo validation to return an error
 for all release timestamps.
 This bug has been fixed in version *0.15.6*, which is available in the OpenSUSE repositories, so we
