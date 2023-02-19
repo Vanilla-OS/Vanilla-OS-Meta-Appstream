@@ -6,6 +6,8 @@ download_icon() {
     local APPID=$1
     local ICON_URL=$(sed -rn 's/.*<icon type="remote">(.*)<\/icon>/\1/p' packages/usr/share/metainfo/$APPID.metainfo.xml)
 
+    mkdir -p packages/usr/share/icons/hicolor/scalable/apps
+
     echo "Downloading icon for $APPID..."
     wget -O packages/usr/share/icons/hicolor/scalable/apps/$APPID.svg $ICON_URL 2> /dev/null
 }

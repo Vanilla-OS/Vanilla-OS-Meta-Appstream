@@ -61,6 +61,6 @@ strongly recommend running the build script inside Apx Zypper container.
 
 ```sh
 $ apx --zypper enter
-$ sudo zypper install wget AppStream
+$ sudo zypper install AppStream AppStream-compose gzip
 $ ./util/appstream_builder.sh
 ```
