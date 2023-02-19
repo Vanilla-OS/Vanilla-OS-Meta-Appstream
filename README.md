@@ -8,7 +8,7 @@ Every application part of Vanilla OS Meta needs to have a `.metainfo.xml` file, 
 the builder script to create an Appstream Catalog file (the file shipped by our repository).
 A [metainfo](https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#sect-Metadata-GenericComponent) file is, at its core, an XML file that describes all aspects of an application and is used by
 software stores such as GNOME Software or KDE's Discover to provide information to the user.
-Inside a metainfo file, we provide information about a component which can be a desktop application, a library, a font, or a codec, such as its id, name, description, license, categories, etc.
+Inside a metainfo file, we provide information about a component which can be a desktop application, a library, a font, or a codec, such as its id, name, description, license, [categories](https://specifications.freedesktop.org/menu-spec/menu-spec-1.0.html#category-registry), etc.
 An Appstream Catalog is a collection of components that can get installed on the system.
 
 ## Contributing
@@ -63,4 +63,11 @@ strongly recommend running the build script inside Apx Zypper container.
 $ apx --zypper enter
 $ sudo zypper install AppStream AppStream-compose gzip
 $ ./util/appstream_builder.sh
+```
+
+You can now run the following command to copy the generated Catalog to a place where GNOME Software
+can read it:
+
+```sh
+sudo cp output/vanilla_meta.xml.gz /usr/share/swcatalog/xml/vanillaos-kinetic-main.xml.gz
 ```
