@@ -3,7 +3,8 @@ Section: devel
 Priority: extra
 Maintainer: Mateus Melchiades <mateusbmelchiades@gmail.com>
 Uploaders: Mateus Melchiades <mateusbmelchiades@gmail.com>
-Build-Depends: appstream,
+Build-Depends: debhelper,
+               appstream,
                appstream-compose
 Standards-Version: 3.9.6
 Homepage: https://github.com/Vanilla-OS/Vanilla-OS-Meta-Appstream
