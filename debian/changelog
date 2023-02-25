@@ -1,3 +1,10 @@
+vanilla-os-meta-appstream (0.1.0-7) kinetic; urgency=critical
+
+  * Upload build appstream since Launchpad has no internet access in build
+    environment
+
+ -- Mateus Melchiades <matbme@duck.com>  Sat, 25 Feb 2023 13:49:00 -0300
+
 vanilla-os-meta-appstream (0.1.0-6) kinetic; urgency=critical
 
   * Add missing wget dependency
