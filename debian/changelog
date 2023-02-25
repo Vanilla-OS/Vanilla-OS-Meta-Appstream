@@ -1,3 +1,15 @@
+vanilla-os-meta-appstream (0.1.0-5) kinetic; urgency=critical
+
+  * Remove executable flag from install
+
+ -- Mateus Melchiades <matbme@duck.com>  Sat, 25 Feb 2023 11:33:00 -0300
+
+vanilla-os-meta-appstream (0.1.0-4) kinetic; urgency=critical
+
+  * Fix Makefile
+
+ -- Mateus Melchiades <matbme@duck.com>  Sat, 25 Feb 2023 11:29:00 -0300
+
 vanilla-os-meta-appstream (0.1.0-3) kinetic; urgency=critical
 
   * Properly rename target file during installation
