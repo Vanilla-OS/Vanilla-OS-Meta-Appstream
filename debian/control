@@ -5,7 +5,8 @@ Maintainer: Mateus Melchiades <mateusbmelchiades@gmail.com>
 Uploaders: Mateus Melchiades <mateusbmelchiades@gmail.com>
 Build-Depends: debhelper,
                appstream,
-               appstream-compose
+               appstream-compose,
+               wget
 Standards-Version: 3.9.6
 Homepage: https://github.com/Vanilla-OS/Vanilla-OS-Meta-Appstream
 Vcs-Browser: https://github.com/Vanilla-OS/Vanilla-OS-Meta-Appstream

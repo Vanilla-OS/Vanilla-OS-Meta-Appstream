@@ -1,3 +1,10 @@
+vanilla-os-meta-appstream (0.1.0-6) kinetic; urgency=critical
+
+  * Add missing wget dependency
+  * Remove Firefox name translation that shouldn't be there
+
+ -- Mateus Melchiades <matbme@duck.com>  Sat, 25 Feb 2023 13:34:00 -0300
+
 vanilla-os-meta-appstream (0.1.0-5) kinetic; urgency=critical
 
   * Remove executable flag from install
