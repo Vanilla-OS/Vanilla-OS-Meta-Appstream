@@ -1,1 +1,2 @@
-output/vanilla_meta.xml.gz /usr/share/swcatalog/xml/vanillaos-kinetic-main.xml.gz
+#!/usr/bin/dh-exec
+output/vanilla_meta.xml.gz => /usr/share/swcatalog/xml/vanillaos-kinetic-main.xml.gz

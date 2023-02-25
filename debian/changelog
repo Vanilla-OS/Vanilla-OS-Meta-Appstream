@@ -1,3 +1,9 @@
+vanilla-os-meta-appstream (0.1.0-2) kinetic; urgency=critical
+
+  * Rename target file during installation
+
+ -- Mateus Melchiades <matbme@duck.com>  Sat, 25 Feb 2023 11:15:00 -0300
+
 vanilla-os-meta-appstream (0.1.0-1) kinetic; urgency=critical
 
   * Add missing build dependency
