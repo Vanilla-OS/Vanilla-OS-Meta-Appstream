@@ -1,3 +1,10 @@
+vanilla-os-meta-appstream (0.1.0-8) lunar; urgency=critical
+
+  * Upload build appstream since Launchpad has no internet access in build
+    environment
+
+ -- Mirko Brombin <send@mirko.pm>  Sat, 25 Feb 2023 13:49:00 -0300
+ 
 vanilla-os-meta-appstream (0.1.0-7) kinetic; urgency=critical
 
   * Upload build appstream since Launchpad has no internet access in build
