@@ -1,6 +1,11 @@
+<div align="center">
+
 # Vanilla OS Meta Appstream
 
-This repository contains app stream metainfo files and tools for adding new packages to Vanilla OS Meta.
+<sup2>This repository contains app stream metainfo files and tools for adding new packages to Vanilla OS Meta.</sup2>
+  
+  ----------------
+  </div>
 
 ## How it works
 
